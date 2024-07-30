@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Frontend Mentor | Contact form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    fieldset{
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="container">
+      <h1>Contact Us</h1>
+      <form action="#" >
+       <fieldset>
+        <label for="first-name">First Name <i>*</i></label>
+        <input type="text" id="first-name" name="first-name" autocomplete="first-name" aria-describedby="first-name-error" required>
+        <span class="error-msg" id="first-name-error">This field is required</span>
+       </fieldset>
+       <fieldset>
+        <label for="last-name">Last Name <i>*</i></label>
+        <input type="text" id="last-name" name="last-name" autocomplete="last-name" aria-describedby="last-name-error" required>
+        <span class="error-msg" id="last-name-error">This field is required</span>
+
+       </fieldset>
+       <fieldset>
+        <label for="email">Email <i>*</i></label>
+        <input type="email" id="email" name="email" autocomplete="email" aria-describedby="email-error" required>
+        <span class="error-msg" id="email-error">Please enter a valid email address</span>
+       </fieldset>
+       <fieldset>
+        <label>Query Type <i>*</i></label>
+        <div class="row">
+          <div class="choice">
+            <input type="radio" id="general-enquiry" name="query-type" value="general-enquiry" autocomplete="general-enquiry" aria-describedby="queryType-error" required>
+            <label for="general-enquiry">General Enquiry</label>
+          </div>
+          <div class="choice">
+            <input type="radio" id="support-request" name="query-type" value="support-request" autocomplete="support-request" aria-describedby="queryType-error" required>
+            <label for="support-request">Support Request</label>
+          </div>
+        </div>
+        <span class="error-msg" id="queryType-error">Please select a query type</span>
+       </fieldset>
+       <fieldset>
+        <label for="message">Message <i>*</i></label>
+        <textarea name="message" id="message" rows="5" aria-describedby="message-error" required></textarea>
+        <span class="error-msg" id="message-error">This field is required</span>
+       </fieldset>
+       <fieldset>
+        <div class="row">
+          <input type="checkbox" id="consent" name="consent" aria-describedby="consent-error" required> 
+          <label for="consent">I consent to being contacted by the team <i>*</i></label>
+        </div>
+        <span class="error-msg" id="consent-error">To submit this form, please consent to being contacted</span>
+      </fieldset>
+       <button type="submit" id="submitBt">Submit</button>
+      </form>
+      <section class="message-sent-alert">
+        <div class="heading">
+          <img src="assets/images/icon-success-check.svg" alt="#">
+          <h2>Message Sent!</h2>
+        </div>
+        <p>Thanks for completing the form. We'll be in touch soon!</p>
+      </section>
+    </section>
+  </main>
+  
+
+  
+  
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Moamen Abdelrahman</a>.
+  </footer>
+  <script src="assets/js/script.js" ></script>
+</body>
+</html>
