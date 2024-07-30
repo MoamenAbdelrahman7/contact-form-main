@@ -17,7 +17,7 @@ main{
     display: grid;
     place-items: center;
     /* min-height: 100vh; */
-    background-color: hsl(186, 15%, 59%);
+    background-color: hsl(148, 38%, 91%);
     padding: 100px 0 0;
 }
 button:hover,
